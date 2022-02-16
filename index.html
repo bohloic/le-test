@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="title">
+                <div class="icon-menu">
+                    <button id="btn" >                
+                        <img src="images/icon-menu.svg" alt="">
+                    </button>
+                </div>
+                <div class="nav-title">
+                    <h1>WIWI</h1>
+                </div>
+            </div>
+            <div class="onglet">
+                <a href="">Tous</a>
+                <a href="">Homme</a>
+                <a href="">Femme</a>
+                <a href="">Enfant</a>
+                <a href="">Contact</a>
+            </div>
+        </nav>
+        <div class="info">
+            <div>
+                <img src="images/icon-cart.svg" alt="">
+            </div>
+            <div >
+                <img class="profil" src="images/image-avatar.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="mb-4">
+                <h1>Panier</h1>
+            </div>
+            <div class="main">
+                <div class="title-main mb-4">
+                    <h4>Nom de l'article</h4>
+                    <h4>Quantité</h4>
+                    <h4>Prix unitaire</h4>
+                    <h4>Sous total</h4>
+                </div>
+                <div class="body-main">
+                    <div class="prod">
+                        <img src="images/image-product-1.jpg" alt="">
+                        <div>
+                            <h5>Sac de riz</h5>
+                            <button class="del">Supprimer</button>
+                        </div>
+                    </div>
+                    <div class="prod">
+                        <button class="moins"> - </button>
+                        <span class="qte">2</span>
+                        <button class="plus"> + </button>
+                    </div>
+                    <div class="prod">
+                        <span class="pu">25000</span>
+                    </div>
+                    <div class="prod">
+                        <span class="sousT">50000</span>
+                    </div>
+                </div>
+                <div class="body-main">
+                    <div class="prod">
+                        <img src="images/image-product-1.jpg" alt="">
+                        <div>
+                            <h5>mamitte</h5>
+                            <button class="del">Supprimer</button>
+                        </div>
+                    </div>
+                    <div class="prod">
+                        <button class="moins"> - </button>
+                        <span class="qte">4</span>
+                        <button class="plus"> + </button>
+                    </div>
+                    <div class="prod">
+                        <span class="pu">3000</span>
+                    </div>
+                    <div class="prod">
+                        <span class="sousT">12000</span>
+                    </div>
+                </div>
+                <div class="addPanier mb-4">
+                    <form action="">
+                        <input type="text"  value="Mamitte">
+                        <input type="number"  value="3000">
+                        <button>Ajouter un article</button>
+                    </form>
+                </div>
+            </div>
+            <div>
+                <h2>Total : 
+                    <span class="t-blue">
+                        <span id="total"></span>fr cfa
+                    </span>
+                </h2>
+            </div>
+        </div>
+    </main>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
